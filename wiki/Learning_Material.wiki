@@ -1,9 +1,5 @@
 #labels 内核,shindow,mytos
-= Introduction =
-操作系统学习相关资料
-= Details =
-
-内核学习材料
+= 内核学习材料 =
 
 网址：
 
