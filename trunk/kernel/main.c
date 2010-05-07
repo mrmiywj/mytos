@@ -16,9 +16,25 @@ void TestA()
 {
 	int i,j;
 	Delay();
-	Delay();
-	Create_Proc((u32)VM86Init,KERNEL);
-	Delay();
+//	Delay();
+//	Create_Proc((u32)VM86Init,KERNEL);
+//	Delay();
+/*	for(i=0;i<64*4;i++){
+		for(j=0;j<50;j++)
+			Draw_Pixel(i,j,i/4);
+	}
+	for(i=0;i<64*4;i++){
+		for(j=50;j<50*2;j++)
+			Draw_Pixel(i,j,64+i/4);
+	}
+	for(i=0;i<64*4;i++){
+		for(j=50*2;j<50*3;j++)
+			Draw_Pixel(i,j,64*2+i/4);
+	}
+	for(i=0;i<64*4;i++){
+		for(j=50*3;j<50*4;j++)
+			Draw_Pixel(i,j,64*3+i/4);
+	}
 
 	Draw_Triangle(0,0,50,30,20,80,4);
 	Draw_Circle(190,90,70,3);
@@ -26,14 +42,14 @@ void TestA()
 	Draw_Circle(200,90,500,7);
 	Draw_Rectangle(100,80,20,40,15);
 	Draw_Rectangle(60,140,60,50,5);
-
+*/
 //	Draw_Pixel(5,5,3);
 	Delay();
 	Delay();
 	Delay();
 //	Create_Proc((u32)ReturnText,KERNEL);
 
-//	Create_Proc((u32)Show_Time,USER);
+	Create_Proc((u32)Show_Time,USER);
 	while(1){
 //		Delay();
 //		disp_str("A");
