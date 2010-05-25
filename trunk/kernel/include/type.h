@@ -7,6 +7,4 @@ typedef unsigned char	u8;
 
 
 
-
-
 #endif
