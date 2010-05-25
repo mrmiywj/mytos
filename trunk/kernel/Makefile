@@ -7,7 +7,7 @@ DASM= ndisasm
 ENTRYOFFSET=0x400
 ENTRYPOINT=0x20400
 LDFLAGS	=-s -Ttext $(ENTRYPOINT)
-CFLAGS		=-I include/ -c -fno-builtin
+CFLAGS		=-I include/ -c -fno-builtin -fno-stack-protector 
 KASMFLAGS  =-I include/ -f elf
 ASMFLAGS	=-I include/ -f elf
 
