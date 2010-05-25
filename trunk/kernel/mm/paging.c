@@ -15,8 +15,9 @@ void Init_Paging()
 }
 void Init_KernelTmp()
 {
-	int i=TMPPAGES;
+/*	int i=TMPPAGES;
 	while(i--){
 		tmp_table[i]=0;			//0表示未使用
 	}
+*/
 }
