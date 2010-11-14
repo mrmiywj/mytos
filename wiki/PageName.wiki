@@ -47,7 +47,7 @@
 
 typedef struct sfs_head
 {
-	int sectors ; '<br>'
+	int sectors ; br
 	int file_num ;
 	SFS* header ;
 	char info[100] ;
