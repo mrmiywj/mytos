@@ -45,7 +45,6 @@
 头节点包含了整个虚拟镜像文件的信息，同时指向第一个节点（第一个文件）
 头节点
 
-{{{
 typedef struct sfs_head
 {
 	int sectors ; '<br>'
@@ -54,7 +53,6 @@ typedef struct sfs_head
 	char info[100] ;
 }SFS_HEAD;
 
-}}}
 节点
 
 {{{
