@@ -46,19 +46,19 @@
 头节点
 typedef struct sfs_head
 {
-	int sectors;
-	int file_num;
-	SFS* header;
-	char info[100];
+	int sectors ;
+	int file_num ;
+	SFS* header ;
+	char info[100] ;
 }SFS_HEAD;
 节点
 typedef struct sfs
 {
-	char name[20];
-	int sectors;
-	int start_sec;
-	char path[20];
-	struct sfs* next;
+	char name[20] ;
+	int sectors ;
+	int start_sec ;
+	char path[20] ;
+	struct sfs* next ;
 }SFS;
 	我们这里又加工了下，在目录configure下面可以配置文件的顺序，这个imgTool文件会去读取那个configure目录下
 
