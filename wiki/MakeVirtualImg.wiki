@@ -45,24 +45,23 @@
 头节点包含了整个虚拟镜像文件的信息，同时指向第一个节点（第一个文件）
 头节点
 
-typedef struct sfs_head{  
+typedef struct sfs_head{
+int sectors ;
+int file_num ;
+SFS* header ;
+char info [ 100 ] ; 
 
-	int sectors ;
-	int file_num ;
-	SFS* header ;
-	char info[100] ; 
-
-}SFS_HEAD;   }}}
+}SFS_HEAD;
 
 节点
 
 
 typedef struct sfs
 {
-	char name[20] ;
+	char name [ 2 0 ] ;
 	int sectors ;
 	int start_sec ;
-	char path[20] ;
+	char path [ 2 0 ] ;
 	struct sfs* next ;
 }SFS;
 
