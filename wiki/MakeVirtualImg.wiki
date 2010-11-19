@@ -45,22 +45,18 @@
 头节点包含了整个虚拟镜像文件的信息，同时指向第一个节点（第一个文件）
 头节点
 
-{{{typedef struct sfs_head{  }}}
+typedef struct sfs_head{  
 
-{{{	int sectors ; br  }}}
+	int sectors ;
+	int file_num ;
+	SFS* header ;
+	char info[100] ; 
 
-{{{
-{{{	int file_num ;   }}}
-
-{{{	SFS* header ;    }}}
-
-{{{	char info[100] ; }}}
-
-{{{}SFS_HEAD;   }}}
+}SFS_HEAD;   }}}
 
 节点
 
-{{{
+
 typedef struct sfs
 {
 	char name[20] ;
@@ -69,7 +65,7 @@ typedef struct sfs
 	char path[20] ;
 	struct sfs* next ;
 }SFS;
-}}}
+
 	我们这里又加工了下，在目录configure下面可以配置文件的顺序，这个imgTool文件会去读取那个configure目录下
 
 的文件来得知有几个文件，他们的名字是什么，以把这些文件加载到虚拟镜像文件中。
