@@ -1,0 +1,13 @@
+#buffering in unix.
+
+= Interview simulation =
+
+   Let’s have an interview
+
+   Our purpose is to have interviews as many as
+possible,and every interview takes the same time
+
+
+= Details =
+
+http://filer.blogbus.com/6085363/6085363_1292226016x.jpg
