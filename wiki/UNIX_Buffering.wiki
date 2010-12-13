@@ -1,5 +1,3 @@
-#buffering in unix.
-
 = Interview simulation =
 
    Let’s have an interview
@@ -8,9 +6,34 @@
 possible,and every interview takes the same time
 
 
-= Details =
+= PICTURE ONE  =
+
+http://filer.blogbus.com/6085363/6085363_1292226001s.jpg
+
+
+   Assumption  
+   The interviewees must make sure their locations by themselves
+The interviewee cannot just shout out:”Num. B2”,and the Num.B2 will not know what he is shouting.
+
+= PICTURE TWO  =
+
+http://filer.blogbus.com/6085363/6085363_12922260086.jpg
+
+= PICTURE THREE  =
 
 http://filer.blogbus.com/6085363/6085363_1292226016x.jpg
-http://filer.blogbus.com/6085363/6085363_12922260086.jpg
-http://filer.blogbus.com/6085363/6085363_1292226001s.jpg
+
+= PICTURE FOUR  =
+
 http://filer.blogbus.com/6085363/6085363_1292225994s.jpg
+
+
+Who will go out!!!!!
+      Ofcourse the the student who is being interviewed
+will not go out.
+      When student go to room C to have interview,they
+will get a paper which is numbered,as in a bank you
+are numbered to do the businesses.And the number is
+increasing
+     So the student left in room B who get the smallest
+number will go out!
