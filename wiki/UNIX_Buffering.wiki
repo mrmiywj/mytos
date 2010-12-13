@@ -6,18 +6,31 @@ _*Our purpose is to have interviews as many aspossible,and every*
 
 _*interview takes the same time*
 
+_*一次面试时间是固定的，在一段时间内怎么让面试的次数更多更好*
 
 == PICTURE ONE  ==
 
 http://filer.blogbus.com/6085363/6085363_1292226001s.jpg
 
+_*房间C到房间B有一电梯，电梯的容量比较很小（假设为1），从房间C到房间B话费的时间也很长*
+
+_*这个假设就像从磁盘拷贝数据到内存会比较花时间，我们要做的事情就是怎么让这种事情别太多*
+
+_*，但又可以访问到我们所需要访问的数据--Buffering*
 
 === Assumption  ===
+
 _*The interviewees must make sure their locations by themselves*
 
-_*The interviewee cannot just shout out:”Num. B2”,and the Num.B2 
+_*The interviewee cannot just shout out:”Num. B2”,and the Num.B2* 
 
-will not know what he is shouting.*
+_*will not know what he is shouting.*
+
+_*面试官不能叫到编号多少的面试者来面试就来面试，他必须每个人挨着一个一个问，你是*
+
+_*不是编号为 XXXX 的面试者，就像在内存查找一个数组里值为5的元素，进程要挨着访问*
+
+_*来查看是不是它所需要的。*
 
 == PICTURE TWO  ==
 
@@ -42,3 +55,19 @@ _*which is numbered,as in a bank you are numbered to do the businesses.*
 _*And the number is increasing So the student left in room B who get* 
 
 _*the smallest number will go out!*
+
+
+
+
+=== Comparation  ===
+The Room C is sencond storage device like disk,and the Room B is actually memory
+
+and the interviewees are processes,and they call the data in disk(have an interview)
+
+Interviewers in room B,let's say that 3 interviewers are in Room A taking an interview
+
+and the rest 13 interviewers stay in Room B,taking an number,the number is actually
+
+a double link list.
+
+And the classes is actually a hash table for searching quickly.
