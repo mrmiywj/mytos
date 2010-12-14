@@ -1,3 +1,6 @@
+*Unix高速缓存区就是在内存中用一小部分空间来保存那些经常会被用到的磁盘块这样就不用访问同一个每次都要从硬盘上拷贝数据了，这样效率会比较低*
+
+
 = Interview simulation =
 
 *Let’s have an interview*
