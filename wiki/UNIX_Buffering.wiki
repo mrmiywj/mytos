@@ -1,16 +1,16 @@
 = 概述 Overview =
 *Unix高速缓存区就是在内存中用一小部分空间来保存那些经常会被用到的磁盘块这样就不用访问同一个每次都要从硬盘上拷贝数据了，这样效率会比较低.*
-*[ the buffering in unix is that it use a small part of memory for second device(like disk) to buffer ]*
+*the buffering in unix is that it use a small part of memory for second device(like disk) to buffer.*
 
 
 
-= 模拟面试 [ Interview simulation ] =
+= 模拟面试 Interview simulation =
 
-*[ Let’s have an interview ]*
+*Let’s have an interview *
 
 
 *一次面试时间是固定的，我们的目标是在一段时间内怎么让面试的次数更多更好*
-*[ Our purpose is to have interviews as many aspossible,and every interview takes the same time ]*
+*Our purpose is to have interviews as many aspossible,and every interview takes the same time.*
 
 == PICTURE ONE  ==
 
