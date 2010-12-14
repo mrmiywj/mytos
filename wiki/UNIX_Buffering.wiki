@@ -1,6 +1,7 @@
 = 概述 Overview =
 *Unix高速缓存区就是在内存中用一小部分空间来保存那些经常会被用到的磁盘块这样就不用访问同一个每次都要从硬盘上拷贝数据了，这样效率会比较低.*
-*the buffering in unix is that it use a small part of memory for second device(like disk) to buffer.*
+
+*The buffering in unix is that it use a small part of memory for second device(like disk) to buffer.*
 
 
 
@@ -10,9 +11,10 @@
 
 
 *一次面试时间是固定的，我们的目标是在一段时间内怎么让面试的次数更多更好*
+
 *Our purpose is to have interviews as many aspossible,and every interview takes the same time.*
 
-== PICTURE ONE  ==
+== Picutre One  ==
 
 
 http://filer.blogbus.com/6085363/6085363_1292226001s.jpg
@@ -24,7 +26,7 @@ http://filer.blogbus.com/6085363/6085363_1292226001s.jpg
 
 *面试官不能叫到编号多少的面试者来面试就来面试，他必须每个人挨着一个一个问，你是不是编号为 XXXX 的面试者，就像在内存查找一个数组里值为5的元素，进程要挨着访问来查看是不是它所需要的。*
 
-*[ The interviewees must make sure their locations by themselves The interviewee cannot just shout out:”Num. B2”,and the Num.B2 will not know what he is shouting. ]*
+*The interviewees must make sure their locations by themselves The interviewee cannot just shout out:”Num. B2”,and the Num.B2 will not know what he is shouting.*
 
 
 
@@ -38,41 +40,32 @@ http://filer.blogbus.com/6085363/6085363_12922260086.jpg
 
 *如果面试者都站在一条线上，那么这个面试官就要每个人挨着问，这样会比较话费时间*
 
+*If the interviewers stand in a line,the interviewees have to ask the interviewers one by one,it will take a long time.*
 
 
-== PICTURE THREE  ==
+== Picure Three  ==
+
 
 http://filer.blogbus.com/6085363/6085363_1292226016x.jpg
 
-*如果这些面试者按班级站成几排，那么面试官只需要根据资料，查看这个面试官是几班在第几排*
 
-*他只需要去几排询问那一排的人就行了，这样就相当于散列在几排*
+
+*如果这些面试者按班级站成几排，那么面试官只需要根据资料，查看这个面试官是几班在第几排他只需要去几排询问那一排的人就行了，这样就相当于散列在几排*
+
+
+*We suppose that the interviewees can get the interviewer's whole infomation.If the interviewers stand in serveral lines order by their class number,and the interviewees will just ask the interviewers in one line,he can know the class number from his information paper.*
+
 
 == PICTURE FOUR  ==
+
 
 http://filer.blogbus.com/6085363/6085363_1292225994s.jpg
 
 
+*那么面试官需要面试的那个人没在房间B中，那么怎么决定去房间C换来那个需要的人呢，谁该从房间B下去呢假设每个从房间A面试出来的人都得到一张票，那么当他走出房间A的时候会得到一张票，这张票上面有个数字，是从1一直递增的，这样留在房间B中谁手上拿着的号数最小的那个人就是应该下去他就是那个最近最少被面试的人。*
+
 === Who will go out!!!!!  ===
-*Ofcourse the the student who is being interviewed will not go out.*
-
-*When student go to room C to have interview,they will get a paper* 
-
-*which is numbered,as in a bank you are numbered to do the businesses.*
-
-*And the number is increasing So the student left in room B who get* 
-
-*the smallest number will go out!*
-
-那么面试官需要面试的那个人没在房间B中，那么怎么决定去房间C换来那个需要的人呢，谁该
-
-从房间B下去呢
-
-假设每个从房间A面试出来的人都得到一张票，那么当他走出房间A的时候会得到一张票，这张票
-
-上面有个数字，是从1一直递增的，这样留在房间B中谁手上拿着的号数最小的那个人就是应该下去
-
-他就是那个最近最少被面试的人。
+*Ofcourse the the student who is being interviewed will not go out.When student go to room C to have interview,they will get a paper which is numbered,as in a bank you are numbered to do the businesses.And the number is increasing So the student left in room B who get the smallest number will go out!*
 
 
 === Comparation  ===
