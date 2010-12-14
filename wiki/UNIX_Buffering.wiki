@@ -1,45 +1,43 @@
-*Unix高速缓存区就是在内存中用一小部分空间来保存那些经常会被用到的磁盘块这样就不用访问同一个每次都要从硬盘上拷贝数据了，这样效率会比较低*
+= 概述[Overview] =
+*Unix高速缓存区就是在内存中用一小部分空间来保存那些经常会被用到的磁盘块这样就不用访问同一个每次都要从硬盘上拷贝数据了，这样效率会比较低.*
+*[the buffering in unix is that it use a small part of memory for second device(like disk) to buffer]*
 
 
-= Interview simulation =
 
-*Let’s have an interview*
+= 模拟面试[Interview simulation] =
 
-*Our purpose is to have interviews as many aspossible,and every* 
+*[Let’s have an interview]*
 
-*interview takes the same time*
 
-*一次面试时间是固定的，在一段时间内怎么让面试的次数更多更好*
+*一次面试时间是固定的，我们的目标是在一段时间内怎么让面试的次数更多更好*
+*[Our purpose is to have interviews as many aspossible,and every interview takes the same time]*
 
 == PICTURE ONE  ==
 
+
 http://filer.blogbus.com/6085363/6085363_1292226001s.jpg
 
-*房间C到房间B有一电梯，电梯的容量比较很小（假设为1），从房间C到房间B话费的时间也很长*
 
-*这个假设就像从磁盘拷贝数据到内存会比较花时间，我们要做的事情就是怎么让这种事情别太多*
 
-*，但又可以访问到我们所需要访问的数据--Buffering*
+*房间C到房间B有一电梯，电梯的容量比较很小（假设为1），从房间C到房间B话费的时间也很长这个假设就像从磁盘拷贝数据到内存会比较花时间，我们要做的事情就是怎么让这种事情别太多但又可以访问到我们所需要访问的数据--Buffering*
 
-=== Assumption  ===
 
-*The interviewees must make sure their locations by themselves*
+*面试官不能叫到编号多少的面试者来面试就来面试，他必须每个人挨着一个一个问，你是不是编号为 XXXX 的面试者，就像在内存查找一个数组里值为5的元素，进程要挨着访问来查看是不是它所需要的。*
 
-*The interviewee cannot just shout out:”Num. B2”,and the Num.B2* 
+*[The interviewees must make sure their locations by themselves The interviewee cannot just shout out:”Num. B2”,and the Num.B2 will not know what he is shouting.]*
 
-*will not know what he is shouting.*
 
-*面试官不能叫到编号多少的面试者来面试就来面试，他必须每个人挨着一个一个问，你是*
-
-*不是编号为 XXXX 的面试者，就像在内存查找一个数组里值为5的元素，进程要挨着访问*
-
-*来查看是不是它所需要的。*
 
 == PICTURE TWO  ==
 
+
+
 http://filer.blogbus.com/6085363/6085363_12922260086.jpg
 
+
+
 *如果面试者都站在一条线上，那么这个面试官就要每个人挨着问，这样会比较话费时间*
+
 
 
 == PICTURE THREE  ==
